@@ -1,5 +1,5 @@
 {
-  "name": "redux-saga-test-plan",
+  "name": "@hrg/redux-saga-test-plan",
   "version": "3.5.1-beta.0",
   "description": "Test Redux Saga with an easy plan - yuvalsv fork",
   "main": "lib/index.js",
@@ -32,6 +32,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yuvalsv/redux-saga-test-plan.git"
+  },
+  "publishConfig": {
+    "registry": "https://hrgtec.pkgs.visualstudio.com/_packaging/hrgtec/npm/registry/"
   },
   "keywords": [
     "redux",
