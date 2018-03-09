@@ -1,7 +1,7 @@
 {
   "name": "redux-saga-test-plan",
-  "version": "3.5.1",
-  "description": "Test Redux Saga with an easy plan",
+  "version": "3.5.1-beta.0",
+  "description": "Test Redux Saga with an easy plan - yuvalsv fork",
   "main": "lib/index.js",
   "files": [
     "decls",
@@ -26,12 +26,12 @@
     "docs:prepare": "gitbook install",
     "docs:build": "npm run docs:prepare && gitbook build",
     "docs:watch": "npm run docs:prepare && gitbook serve",
-    "docs:publish": "npm run docs:clean && npm run docs:build && cp CNAME _book && cd _book && git init && git commit --allow-empty -m 'update book' && git checkout -b gh-pages && touch .nojekyll && git add . && git commit -am 'update book' && git push git@github.com:jfairbank/redux-saga-test-plan gh-pages --force"
+    "docs:publish": "npm run docs:clean && npm run docs:build && cp CNAME _book && cd _book && git init && git commit --allow-empty -m 'update book' && git checkout -b gh-pages && touch .nojekyll && git add . && git commit -am 'update book' && git push git@github.com:yuvalsv/redux-saga-test-plan gh-pages --force"
   },
   "typings": "index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jfairbank/redux-saga-test-plan.git"
+    "url": "git+https://github.com/yuvalsv/redux-saga-test-plan.git"
   },
   "keywords": [
     "redux",
@@ -45,9 +45,9 @@
   "author": "Jeremy Fairbank <elpapapollo@gmail.com> (http://jeremyfairbank.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jfairbank/redux-saga-test-plan/issues"
+    "url": "https://github.com/yuvalsv/redux-saga-test-plan/issues"
   },
-  "homepage": "https://github.com/jfairbank/redux-saga-test-plan#readme",
+  "homepage": "https://github.com/yuvalsv/redux-saga-test-plan#readme",
   "devDependencies": {
     "babel-cli": "^6.7.7",
     "babel-core": "^6.7.7",
@@ -74,7 +74,7 @@
     "jest": "^21.1.0",
     "prettier": "1.11.0",
     "redux": "^3.6.0",
-    "redux-saga": "^0.16.0",
+    "redux-saga": "1.0.0-beta.0",
     "rimraf": "^2.5.4"
   },
   "dependencies": {
@@ -86,7 +86,7 @@
     "util-inspect": "^0.1.8"
   },
   "peerDependencies": {
-    "redux-saga": ">= 0.15.0 < 0.17.0"
+    "redux-saga": ">= 1.0.0-beta.0"
   },
   "jest": {
     "collectCoverage": true,

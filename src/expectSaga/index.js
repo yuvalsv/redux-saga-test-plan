@@ -628,7 +628,7 @@ export default function expectSaga(
       setReturnValue,
     );
 
-    mainTaskPromise = mainTask.done
+	mainTaskPromise = mainTask.toPromise()
       .then(checkExpectations)
       // Pass along the error instead of rethrowing or allowing to
       // bubble up to avoid PromiseRejectionHandledWarning
